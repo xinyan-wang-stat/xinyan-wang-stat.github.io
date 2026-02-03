@@ -47,3 +47,14 @@ Wait for the workflow to finish (green check in the Actions tab). The site will 
 
 - **Site builds but looks wrong**  
   In `_config.yml`, `url` should be `https://xinyan-wang-stat.github.io` and `baseurl` should be empty for a user site.
+
+## Optional: Don’t add “Co-authored-by: Cursor” to commits
+
+If you use Cursor and don’t want it added as co-author, install the hook (once per clone):
+
+```bash
+cp githooks/prepare-commit-msg .git/hooks/prepare-commit-msg
+chmod +x .git/hooks/prepare-commit-msg
+```
+
+It strips any `Co-authored-by: ... Cursor` line from commit messages before the commit is created.
