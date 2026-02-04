@@ -1,0 +1,7 @@
+#!/bin/sh
+# Remove "Co-authored-by: Cursor" (and similar) from commit message so Cursor is not added as co-author.
+FILE="$1"
+[ -z "$FILE" ] || [ ! -f "$FILE" ] && exit 0
+tmp=$(mktemp) || exit 0
+grep -v '^Co-authored-by:.*[Cc]ursor' "$FILE" > "$tmp" && mv "$tmp" "$FILE"
+exit 0
