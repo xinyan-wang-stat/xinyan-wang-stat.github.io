@@ -1,18 +1,22 @@
 ---
 ---
 
-@article{shao2023mle,
-  abbr={STARF},
-  title={MLE with datasets from populations having shared parameters},
-  author={Shao, Jun and Wang, Xinyan},
-  journal={Statistical Theory and Related Fields},
-  volume={7},
-  number={3},
-  pages={213--222},
-  year={2023},
-  doi={10.1080/24754269.2023.2180185},
-  html={https://doi.org/10.1080/24754269.2023.2180185},
-  pdf={https://www.tandfonline.com/doi/pdf/10.1080/24754269.2023.2180185},
+@article{wang2026rom,
+  abbr={arXiv},
+  title={ROM: Real-time Overthinking Mitigation via Streaming Detection and Intervention},
+  author={Wang, Xinyan and Liu, Xiaogeng and Xiao, Chaowei},
+  journal={arXiv preprint arXiv:2603.22016},
+  year={2026},
+  eprint={2603.22016},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  arxiv={2603.22016},
+  pdf={https://arxiv.org/pdf/2603.22016.pdf},
+  code={https://github.com/SaFo-Lab/ROM},
+  website={https://xinyan-wang-stat.github.io/ROM/},
+  abstract={Large Reasoning Models (LRMs) achieve strong accuracy on challenging tasks by generating long Chain-of-Thought traces, but suffer from overthinking. Even after reaching the correct answer, they continue generating redundant reasoning steps. This behavior increases latency and compute cost and can also lead to answer drift. Existing mitigation methods either require training-heavy backbone modification or rely on hand-crafted heuristics that do not truly capture overthinking patterns. We propose ROM, the first method that formulates overthinking mitigation as a streaming prediction-and-control problem. ROM attaches a lightweight detection head to the late-layer hidden states of a frozen large language model backbone. It monitors tokens in real time and triggers an early transition to the final answer once overthinking is detected. We also introduce token-level supervision based on solution correctness boundaries and a data augmentation strategy that reduces distilled-data bias. Across seven benchmarks, ROM achieves the highest accuracy (93.51\%), the shortest responses (1,159 tokens), and the best response efficiency. Compared with the vanilla baseline, it reduces response length by 47.2\% and improves efficiency by 121\%. These results show that streaming detection is a promising approach to real-time overthinking mitigation.},
+  bibtex_show={true},
+  preview={rom.png},
   selected={true}
 }
 
@@ -26,8 +30,29 @@
   archivePrefix={arXiv},
   primaryClass={cs.CR},
   arxiv={2602.00154},
-  html={https://arxiv.org/abs/2602.00154},
   pdf={https://arxiv.org/pdf/2602.00154.pdf},
   code={https://github.com/SaFo-Lab/ReasoningBomb},
+  website={https://reasoningbomb.github.io},
+  abstract={Large reasoning models (LRMs) extend large language models with explicit multi-step reasoning traces, but this capability introduces a new class of prompt-induced inference-time denial-of-service (PI-DoS) attacks that exploit the high computational cost of reasoning. We first formalize inference cost for LRMs and define PI-DoS, then prove that any practical PI-DoS attack should satisfy three properties: (1) a high amplification ratio, where each query induces a disproportionately long reasoning trace relative to its own length; (ii) stealthiness, in which prompts and responses remain on the natural language manifold and evade distribution shift detectors; and (iii) optimizability, in which the attack supports efficient optimization without being slowed by its own success. Under this framework, we present ReasoningBomb, a reinforcement-learning-based PI-DoS framework that is guided by a constant-time surrogate reward and trains a large reasoning-model attacker to generate short natural prompts that drive victim LRMs into pathologically long and often effectively non-terminating reasoning. Across seven open-source models (including LLMs and LRMs) and three commercial LRMs, ReasoningBomb induces 18,759 completion tokens on average and 19,263 reasoning tokens on average across reasoning models. It outperforms the runner-up baseline by 35\% in completion tokens and 38\% in reasoning tokens, while inducing 6-7x more tokens than benign queries and achieving 286.7x input-to-output amplification ratio averaged across all samples. Additionally, our method achieves 99.8\% bypass rate on input-based detection, 98.7\% on output-based detection, and 98.4\% against strict dual-stage joint detection.},
+  bibtex_show={true},
+  preview={reasoningbomb.png},
+  selected={true}
+}
+
+@article{shao2023mle,
+  abbr={STARF},
+  title={MLE with datasets from populations having shared parameters},
+  author={Shao, Jun and Wang, Xinyan},
+  journal={Statistical Theory and Related Fields},
+  volume={7},
+  number={3},
+  pages={213--222},
+  year={2023},
+  doi={10.1080/24754269.2023.2180185},
+  html={https://doi.org/10.1080/24754269.2023.2180185},
+  pdf={https://www.tandfonline.com/doi/pdf/10.1080/24754269.2023.2180185},
+  abstract={We consider maximum likelihood estimation with two or more datasets sampled from different populations with shared parameters. Although more datasets with shared parameters can increase statistical accuracy, this paper shows how to handle heterogeneity among different populations for correctness of estimation and inference. Asymptotic distributions of maximum likelihood estimators are derived under either regular cases where regularity conditions are satisfied or some non-regular situations. A bootstrap variance estimator for assessing performance of estimators and/or making large sample inference is also introduced and evaluated in a simulation study.},
+  bibtex_show={true},
+  preview={mle.png},
   selected={true}
 }
