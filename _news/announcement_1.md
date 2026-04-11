@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**ReasoningBomb** is now on [arXiv](https://arxiv.org/abs/2602.00154). Check out our [website](https://reasoningbomb.github.io) and [code](https://github.com/SaFo-Lab/ReasoningBomb).
+**ReasoningBomb** is now on [arXiv](https://arxiv.org/abs/2602.00154). Check out our [website](https://reasoningbomb.github.io), [code](https://github.com/SaFo-Lab/ReasoningBomb), and [dataset](https://huggingface.co/datasets/ReasoningBomb/ReasoningBomb).
