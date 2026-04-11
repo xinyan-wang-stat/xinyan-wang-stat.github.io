@@ -21,10 +21,10 @@
 }
 
 @article{liu2026reasoningbomb,
-  abbr={arXiv},
+  abbr={CCS},
   title={ReasoningBomb: A Stealthy Denial-of-Service Attack by Inducing Pathologically Long Reasoning in Large Reasoning Models},
   author={Liu, Xiaogeng and Wang, Xinyan and Zhang, Yechao and Kariyappa, Sanjay and Xiang, Chong and Chen, Muhao and Suh, G. Edward and Xiao, Chaowei},
-  journal={arXiv preprint arXiv:2602.00154},
+  booktitle={Proceedings of the ACM Conference on Computer and Communications Security (CCS)},
   year={2026},
   eprint={2602.00154},
   archivePrefix={arXiv},
@@ -33,7 +33,7 @@
   pdf={https://arxiv.org/pdf/2602.00154.pdf},
   code={https://github.com/SaFo-Lab/ReasoningBomb},
   website={https://reasoningbomb.github.io},
-  abstract={Large reasoning models (LRMs) extend large language models with explicit multi-step reasoning traces, but this capability introduces a new class of prompt-induced inference-time denial-of-service (PI-DoS) attacks that exploit the high computational cost of reasoning. We first formalize inference cost for LRMs and define PI-DoS, then prove that any practical PI-DoS attack should satisfy three properties: (1) a high amplification ratio, where each query induces a disproportionately long reasoning trace relative to its own length; (ii) stealthiness, in which prompts and responses remain on the natural language manifold and evade distribution shift detectors; and (iii) optimizability, in which the attack supports efficient optimization without being slowed by its own success. Under this framework, we present ReasoningBomb, a reinforcement-learning-based PI-DoS framework that is guided by a constant-time surrogate reward and trains a large reasoning-model attacker to generate short natural prompts that drive victim LRMs into pathologically long and often effectively non-terminating reasoning. Across seven open-source models (including LLMs and LRMs) and three commercial LRMs, ReasoningBomb induces 18,759 completion tokens on average and 19,263 reasoning tokens on average across reasoning models. It outperforms the runner-up baseline by 35\% in completion tokens and 38\% in reasoning tokens, while inducing 6-7x more tokens than benign queries and achieving 286.7x input-to-output amplification ratio averaged across all samples. Additionally, our method achieves 99.8\% bypass rate on input-based detection, 98.7\% on output-based detection, and 98.4\% against strict dual-stage joint detection.},
+  abstract={We present ReasoningBomb, an RL-based framework that trains an attacker model to craft short, natural-language prompts that trap large reasoning models (LRMs) into pathologically long reasoning chains, posing a stealthy denial-of-service threat. A key design is a constant-time surrogate reward: a lightweight MLP on frozen hidden states replaces expensive autoregressive victim evaluation, yielding a 4.39×10⁵× training speedup while staying highly correlated with actual reasoning length. Server simulations show that just 10\% malicious traffic cuts benign throughput by 49.8\% and monopolizes 64.3\% of compute.},
   bibtex_show={true},
   preview={reasoningbomb.png},
   selected={true}
