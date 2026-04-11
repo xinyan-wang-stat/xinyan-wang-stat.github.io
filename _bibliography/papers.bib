@@ -12,15 +12,15 @@
   primaryClass={cs.AI},
   arxiv={2603.22016},
   pdf={https://arxiv.org/pdf/2603.22016.pdf},
-  code={https://github.com/SaFo-Lab/ROM},
-  website={https://xinyan-wang-stat.github.io/ROM/},
+  code={https://github.com/SaFo-Lab/ROM-LRM},
+  website={https://xinyan-wang-stat.github.io/ROM-LRM/},
   abstract={Large Reasoning Models (LRMs) achieve strong accuracy on challenging tasks by generating long Chain-of-Thought traces, but suffer from overthinking. Even after reaching the correct answer, they continue generating redundant reasoning steps. This behavior increases latency and compute cost and can also lead to answer drift. Existing mitigation methods either require training-heavy backbone modification or rely on hand-crafted heuristics that do not truly capture overthinking patterns. We propose ROM, the first method that formulates overthinking mitigation as a streaming prediction-and-control problem. ROM attaches a lightweight detection head to the late-layer hidden states of a frozen large language model backbone. It monitors tokens in real time and triggers an early transition to the final answer once overthinking is detected. We also introduce token-level supervision based on solution correctness boundaries and a data augmentation strategy that reduces distilled-data bias. Across seven benchmarks, ROM achieves the highest accuracy (93.51\%), the shortest responses (1,159 tokens), and the best response efficiency. Compared with the vanilla baseline, it reduces response length by 47.2\% and improves efficiency by 121\%. These results show that streaming detection is a promising approach to real-time overthinking mitigation.},
   bibtex_show={true},
   preview={rom.png},
   selected={true}
 }
 
-@article{liu2026reasoningbomb,
+@inproceedings{liu2026reasoningbomb,
   abbr={CCS},
   title={ReasoningBomb: A Stealthy Denial-of-Service Attack by Inducing Pathologically Long Reasoning in Large Reasoning Models},
   author={Liu, Xiaogeng and Wang, Xinyan and Zhang, Yechao and Kariyappa, Sanjay and Xiang, Chong and Chen, Muhao and Suh, G. Edward and Xiao, Chaowei},

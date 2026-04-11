@@ -20,3 +20,4 @@ nav_order: 5
 | Spring 2025 | STAT 340: Data Science Modeling II | DIS 314, 315, 316 |
 | Spring 2026 | STAT 340: Data Science Modeling II | DIS 337, 338, 339 |
 | Fall 2025 | STAT 309: Introduction to Probability and Mathematical Statistics I | DIS 311, 312, 313 |
+| Summer 2026 | STAT 240: Data Science Modeling I | DIS 314, 315, 316 |
