@@ -6,7 +6,7 @@ subtitle: xwang2587@wisc.edu.
 
 profile:
   align: right
-  image: graduation.png
+  image: graduation_square.png
   image_circular: false # crops the image to make circular
   address: >
     <p>5606 Morgridge Hall, 1205 University Avenue, Madison, WI 53706</p>
