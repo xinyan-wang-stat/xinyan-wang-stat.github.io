@@ -17,9 +17,13 @@ selected_papers: true
 social: true
 
 service:
-  - Reviewer of ACL 26', ECCV 26'.
+  - Reviewer of ACL' 26, ECCV' 26.
 ---
 
 I am **Xinyan Wang**, a third year PhD student in Statistics at the University of Wisconsin–Madison, advised by [Professor Jun Shao](https://pages.stat.wisc.edu/~shao/) and working with [Professor Chaowei Xiao](https://xiaocw11.github.io/) at Johns Hopkins University. I received my BS in Statistics from East China Normal University in 2022 and MS in Statistics from UW–Madison in 2023. I am also pursuing a MS in Computer Science at UW–Madison.
 
-My research has two lines: **statistical inference** and **trustworthy AI**. On the statistics side, I work on data integration from a statistical inference perspective. On the AI safety side, I work on understanding and mitigating vulnerabilities in large reasoning models (LRMs), including denial-of-service attacks via reasoning exploitation ([ReasoningBomb](https://arxiv.org/abs/2602.00154)) and efficient inference through real-time overthinking detection ([ROM](https://arxiv.org/abs/2603.22016)).
+I work on large reasoning models (LRMs) and statistical inference. My goal is to make reasoning models efficient and safe enough to deploy in practice, using reinforcement learning and representation analysis. My current topics of interest include:
+
+- **Efficient Reasoning**: Reducing redundant computation in large reasoning models at inference time — e.g., [ROM](https://arxiv.org/abs/2603.22016), a model-agnostic streaming detector-and-intervention framework that curbs overthinking in frozen LRMs in real time at no accuracy cost.
+- **Safety of Reasoning Models**: Understanding and red-teaming the vulnerabilities that long reasoning traces introduce — e.g., [ReasoningBomb](https://arxiv.org/abs/2602.00154) (CCS 2026), a reinforcement-learning-based inference-time denial-of-service attack that traps LRMs into pathologically long reasoning.
+- **Statistical Inference and Data Integration**: Maximum-likelihood estimation and valid inference when combining datasets from heterogeneous populations with shared parameters.
