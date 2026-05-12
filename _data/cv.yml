@@ -7,3 +7,37 @@
       value: xwang2587@wisc.edu
     - name: Homepage
       value: https://xinyan-wang-stat.github.io
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD in Statistics
+      institution: University of Wisconsin–Madison, Madison, WI, USA
+      year: 2023 – 2028
+      description:
+        - Advised by Professor Jun Shao
+    - title: MS in Computer Science
+      institution: University of Wisconsin–Madison, Madison, WI, USA
+      year: 2023 – 2026
+      description: []
+    - title: MS in Statistics
+      institution: University of Wisconsin–Madison, Madison, WI, USA
+      year: 2021 – 2023
+      description: []
+    - title: BS in Statistics
+      institution: East China Normal University, Shanghai, China
+      year: 2018 – 2022
+      description: []
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Teaching Assistant
+      institution: Department of Statistics, University of Wisconsin–Madison
+      year: 2023 – Present
+
+- title: Research Interests
+  type: list
+  contents:
+    - Statistical inference
+    - Trustworthy AI
