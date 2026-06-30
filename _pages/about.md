@@ -9,7 +9,7 @@ profile:
   image: graduation_square.png
   image_circular: false # crops the image to make circular
   address: >
-    <p>5606 Morgridge Hall, 1205 University Avenue, Madison, WI 53706</p>
+    <p>5615 Morgridge Hall, 1205 University Avenue, Madison, WI 53706</p>
 
 news: true
 latest_posts: false
