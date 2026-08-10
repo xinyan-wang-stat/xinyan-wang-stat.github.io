@@ -39,6 +39,8 @@
 - title: Research Interests
   type: list
   contents:
+    - LLM post-training (RL, on-policy distillation)
+    - LLM agents and agent red-teaming
     - Efficient reasoning
     - Safety of reasoning models
     - Reasoning distillation
