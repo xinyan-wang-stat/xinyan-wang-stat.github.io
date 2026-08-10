@@ -10,6 +10,7 @@ profile:
   image_circular: false # crops the image to make circular
   address: >
     <p>5615 Morgridge Hall, 1205 University Avenue, Madison, WI 53706</p>
+    <p><a href="/assets/pdf/resume.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Curriculum Vitae</a></p>
 
 news: true
 latest_posts: false
