@@ -21,7 +21,7 @@ service:
   - Reviewer of ACL' 26, ECCV' 26, EMNLP' 26, NeurIPS' 26.
 ---
 
-I am **Xinyan Wang**, a third year PhD student in Statistics at the University of Wisconsin–Madison, advised by [Professor Jun Shao](https://pages.stat.wisc.edu/~shao/) and working with [Professor Chaowei Xiao](https://xiaocw11.github.io/) at Johns Hopkins University. I received my BS in Statistics from East China Normal University in 2022 and MS in Statistics from UW–Madison in 2023. I am also pursuing a MS in Computer Science at UW–Madison.
+I am **Xinyan Wang**, a fourth year PhD student in Statistics at the University of Wisconsin–Madison, advised by [Professor Jun Shao](https://pages.stat.wisc.edu/~shao/) and working with [Professor Chaowei Xiao](https://xiaocw11.github.io/) at Johns Hopkins University. I received my BS in Statistics from East China Normal University in 2022 and MS in Statistics from UW–Madison in 2023. I am also pursuing a MS in Computer Science at UW–Madison.
 
 I work on **LLM post-training** — reinforcement learning (RL) and on-policy distillation (OPD) — and on **LLM agents**. My goal is to make reasoning models efficient, reliable, and safe enough to deploy in practice. I am now extending that goal to **agent safety**, currently through red-teaming. My current topics of interest include:
 
