@@ -15,7 +15,7 @@
       institution: University of Wisconsin–Madison, Madison, WI, USA
       year: 2023 – 2028
       description:
-        - Advised by Professor Jun Shao
+        - Advised by Professors <a href="https://pages.stat.wisc.edu/~shao/">Jun Shao</a> and <a href="https://luoxiao12.github.io/">Xiao Luo</a>
     - title: MS in Computer Science
       institution: University of Wisconsin–Madison, Madison, WI, USA
       year: 2023 – 2026
@@ -35,6 +35,9 @@
     - title: Teaching Assistant
       institution: Department of Statistics, University of Wisconsin–Madison
       year: 2023 – Present
+
+- title: Publications
+  type: publications
 
 - title: Research Interests
   type: list

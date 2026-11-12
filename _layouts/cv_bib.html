@@ -1,0 +1,26 @@
+---
+---
+<div class="cv-publication">
+  <div>
+    {%- assign equal_contributors = entry.equal_contribution | split: ' and ' -%}
+    {%- for author in entry.author_array -%}
+      {%- assign author_full_name = author.first | append: ' ' | append: author.last -%}
+      {%- unless forloop.first %}, {% endunless -%}
+      {%- if site.scholar.last_name contains author.last and site.scholar.first_name contains author.first -%}
+        <strong>{{ author.first }} {{ author.last }}</strong>
+      {%- else -%}
+        {{ author.first }} {{ author.last }}
+      {%- endif -%}
+      {%- if equal_contributors contains author_full_name -%}<sup>*</sup>{%- endif -%}
+    {%- endfor -%}.
+  </div>
+  <div>
+    {%- assign paper_url = entry.url | default: entry.html | default: entry.pdf -%}
+    <a href="{{ paper_url }}" target="_blank" rel="noopener noreferrer">{{ entry.title }}</a>.
+  </div>
+  <div>
+    <em>{{ entry.journal | default: entry.booktitle | default: entry.howpublished }}</em>, {{ entry.year }}.
+    {% if entry.arxiv %}<a href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv:{{ entry.arxiv }}</a>.{% endif %}
+  </div>
+  {% if entry.note %}<div class="small">{{ entry.note }}</div>{% endif %}
+</div>

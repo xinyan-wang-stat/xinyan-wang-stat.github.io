@@ -359,6 +359,19 @@ footer.sticky-bottom {
 .cv {
   margin-bottom: 40px;
 
+  .cv-publications ol {
+    margin-bottom: 0;
+    padding-left: 1.5rem;
+
+    li {
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   .card {
     background-color: var(--global-card-bg-color);
     border: 1px solid var(--global-divider-color);
